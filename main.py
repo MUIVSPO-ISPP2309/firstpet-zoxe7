@@ -14,7 +14,7 @@ def generate_password(length=12, use_digits=True, use_special_chars=True):
     if use_special_chars:
         characters += string.punctuation
 
-    password = ''.join(secrets.choice(characters) for _ in range(length))  # Use secrets.choice
+    password = ''.join(secrets.choice(characters) for _ in range(length)) 
     return password
 
 
